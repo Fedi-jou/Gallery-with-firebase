@@ -89,10 +89,23 @@ label:hover {
   min-height: 100%;
   max-width: 150%;
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
 }
-
+.img-wrap .icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: red;
+  /* transform: scale(2); */
+  margin: 5%;
+  opacity: 0.5;
+}
+.img-wrap .icon:hover {
+  transform: scale(3);
+  opacity: 2;
+}
 /* modal styles */
 .backdrop {
   position: fixed;
