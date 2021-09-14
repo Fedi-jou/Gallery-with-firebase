@@ -89,7 +89,6 @@ label:hover {
   min-height: 100%;
   max-width: 150%;
   position: absolute;
-  display: block;
   top: 0;
   left: 0;
 }
@@ -97,13 +96,16 @@ label:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  color: red;
-  /* transform: scale(2); */
+  color: yellow;
+  font-size: 3rem;
   margin: 5%;
   opacity: 0.5;
 }
 .img-wrap .icon:hover {
-  transform: scale(3);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  transform: scale(2);
   opacity: 2;
 }
 /* modal styles */
