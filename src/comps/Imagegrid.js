@@ -4,11 +4,8 @@ import { projectfirestore } from "../firebase/Config";
 import { RiDeleteBin2Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
-function Imagegrid({ setSelectedimg }) {
+function Imagegrid({ setSelectedimg, setIcon }) {
   const { docs } = Usefirestore("images");
-  console.log(docs, "sqdsqd");
-  console.log(projectfirestore, "ttt");
-
   /*   const deleteFromFirebase = (url) => {
     const pictureRef = projectstorage.refFromURL(url);
     pictureRef
@@ -53,13 +50,12 @@ function Imagegrid({ setSelectedimg }) {
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
             />
-            <div>
-              {}
+            <span onClick={() => setIcon(false)}>
               <RiDeleteBin2Fill
                 className="icon"
                 onClick={() => deleteFromFirebase(doc.id)}
               />
-            </div>
+            </span>
           </motion.div>
         ))}
     </div>

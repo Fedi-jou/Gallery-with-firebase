@@ -6,12 +6,13 @@ import Uploadform from "./comps/Uploadform";
 
 function App() {
   const [selectedimg, setSelectedimg] = useState(null);
+  const [icon, setIcon] = useState(true);
   return (
     <div className="App">
       <Title />
       <Uploadform />
-      <Imagegrid setSelectedimg={setSelectedimg} />
-      {selectedimg && (
+      <Imagegrid setSelectedimg={setSelectedimg} setIcon={setIcon} />
+      {selectedimg && icon && (
         <Modal selectedimg={selectedimg} setSelectedimg={setSelectedimg} />
       )}
     </div>
