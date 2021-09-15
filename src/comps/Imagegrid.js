@@ -45,7 +45,8 @@ function Imagegrid({ setSelectedimg, setModal, modal }) {
       setSelectedimg(null);
       setModal(true);
     }, 2000);
-  }, [Handlechange]);
+    clearTimeout();
+  }, [modal]);
 
   return (
     <div className="img-grid">
