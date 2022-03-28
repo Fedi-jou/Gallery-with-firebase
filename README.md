@@ -1,3 +1,9 @@
+## Upload your pictures online with firebase 
+#### use framer montion and material ui to give a cool effect to your upload pictures , and get notified by react-toastify
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
